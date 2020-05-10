@@ -125,16 +125,16 @@ body, html {
 .header_box{
     outline: thick double white;
     padding: 5px 12px;
-    font-size: 10px !important;
+    font-size: 0.9vw !important;
 }
 
 .custom_nav a{
     color: aliceblue;
-    font-family: proxima-nova;
+    /* font-family: proxima-nova; */
     text-transform: uppercase;
     font-weight: 400;
     font-style: normal; 
-    letter-spacing: 4px;
+    letter-spacing: 0.25vw;
     text-decoration: none;
     margin-right: 20px;
 }
@@ -201,6 +201,8 @@ body, html {
 
 .content>h4 {
     word-break: break-word;
+    font-size: 2vw !important;
+    color: #FFF;
 }
 
 .row:after {
@@ -215,11 +217,11 @@ body, html {
 }
 
 .content>img{
-    border: 1px solid #F80A39;
-    border-radius: 4px;
+    /* border: 1px solid #F80A39; */
+    /* border-radius: 4px; */
     padding: 5px;
-    width: 150px;
-    height: 167.25px;
+    width: 9.375rem;
+    height: 8.453rem;
 }
 
 .column_education {
@@ -379,7 +381,7 @@ strong {
     font-size: 17px;
     margin-right: 4px;
     font-weight: 100;
-    margin-left: 308px;
+    margin-left: 10.25rem;
     margin-top: 3px;
 }
 /* @-webkit-keyframes fade {

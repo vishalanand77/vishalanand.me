@@ -23,19 +23,19 @@ function firstFontBigFollowedSmall(font_spacing = null, first_letter_size = null
     let first_letter = '';
     let letter_list = '';
     if(font_spacing == null){
-        font_spacing = 0.563;
+        font_spacing = 0.9;
     }
     if(first_letter_size == null){
-        first_letter_size = 3.125;
+        first_letter_size = 4;
     }
     if(other_letters_size == null){
-        other_letters_size = 1.563;
+        other_letters_size = 2;
     }
     $('.caps_change').html('');
     text_array.forEach(function(item, index){
         first_letter = item.charAt(0).toUpperCase();
         letter_list = item.substring(1, item.length).toUpperCase();        
-        $('.caps_change').append(`<span style="display: inline-block; margin-right: `+font_spacing+`rem; align-items: baseline;"><p style="font-size: `+first_letter_size+`rem; display: inline-block;">`+' '+first_letter+`</p><p style="font-size: `+other_letters_size+`rem; display: inline-block;">`+letter_list+`</p></span>`)
+        $('.caps_change').append(`<span style="display: inline-block; margin-right: `+font_spacing+`vw; align-items: baseline;"><p style="font-size: `+first_letter_size+`vw; display: inline-block;">`+' '+first_letter+`</p><p style="font-size: `+other_letters_size+`vw; display: inline-block;">`+letter_list+`</p></span>`)
     })
     $('.caps_change').css('display', 'inline-block');
 
@@ -94,7 +94,13 @@ nextPrevDivSwitch('prev_btn','next_btn', current_photo = 0, certificate_array);
 $(document).ready(function(){
     $('#contact_btn').on('click', function(e){
         e.preventDefault();
-        console.log('here')
         $('#contact_modal').modal('show');
     })    
+
+    if(window.matchMedia("(max-width: 767px)").matches){
+        $('.vertical_line').hide();
+    } else{
+        $('.vertical_line').show()
+    }
+
 })
