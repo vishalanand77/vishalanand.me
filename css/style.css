@@ -125,7 +125,7 @@ body, html {
 .header_box{
     outline: thick double white;
     padding: 5px 12px;
-    font-size: 1.2vw !important;
+    font-size: 1.1vw !important;
 }
 
 .custom_nav a{
