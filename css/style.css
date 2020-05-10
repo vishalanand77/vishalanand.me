@@ -125,7 +125,7 @@ body, html {
 .header_box{
     outline: thick double white;
     padding: 5px 12px;
-    font-size: 1vw !important;
+    font-size: 1.4vw !important;
 }
 
 .custom_nav a{
@@ -344,7 +344,8 @@ strong {
 
 .close{
     color: #FFF;
-    opacity: 1;
+    opacity: 1;    
+    margin-left: 0rem !important;
 }
 
 .contact_photo {
@@ -359,6 +360,10 @@ strong {
 
 .contact_img_container{
     display: inherit;
+}
+
+.contact_img_container>img{
+    height: 15.313rem;
 }
 
 .contact_details_container{
@@ -381,8 +386,8 @@ strong {
     font-size: 17px;
     margin-right: 4px;
     font-weight: 100;
-    margin-left: 10.25rem;
-    margin-top: 3px;
+    margin-left: 11.25rem;
+    margin-top: 3px;    
 }
 /* @-webkit-keyframes fade {
     from {
