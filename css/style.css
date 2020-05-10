@@ -1,0 +1,412 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.hidden{
+    display: none;
+}
+
+.mt-20{
+    margin-top: 20px;
+}
+
+.center{
+    text-align: center;
+}
+
+
+/* .slideshow-container{
+    margin: auto;
+    max-width: 1000px;
+    position: relative;
+} */
+
+.image-slide-1 {
+    background-image: url("./images/wallpaper_2.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    animation-duration: 1.5s;
+    animation-name: fade_1;
+}
+
+.image-slide-2 {
+    background-image: url("./images/wallpaper_1.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    animation-duration: 1.5s;
+    animation-name: fade_1;
+}
+
+.image-slide-3 {
+    background-image: url("./images/wallpaper_3.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    animation-duration: 1.5s;
+    animation-name: fade_1;
+}
+
+.image-slide-4 {
+    background-image: url("./images/wallpaper_4.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    animation-duration: 1.5s;
+    animation-name: fade_1;
+}
+
+.image-slide-5 {
+    background-image: url("./images/wallpaper_5.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    animation-duration: 1.5s;
+    animation-name: fade_1;
+}
+
+.fade_1 {
+    /* -webkit-animation-name: fade_1;
+    -webkit-animation-duration: 1.5s; */
+    animation-name: fade_1;
+    animation-duration: 1.5s;
+}
+
+.hr>hr{
+    margin-top: 2px;
+    margin-bottom: 3px;
+    border: none;
+    height: 2px;
+    color: #F80A39;
+    background-color: #F80A39;
+}
+
+/* .photo_frame{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    z-index: 2;
+    left: 6%;
+    top: 49%;
+    background-color: aliceblue;
+    border-radius: 50%;
+} */
+
+.hello_text{
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 3vw;
+}
+
+.custom_nav{
+    position: absolute;
+    z-index: 1; 
+    left: 0;
+    right: 0;   
+}
+.header_box{
+    outline: thick double white;
+    padding: 5px 12px;
+    font-size: 10px !important;
+}
+
+.custom_nav a{
+    color: aliceblue;
+    font-family: proxima-nova;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: normal; 
+    letter-spacing: 4px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.profile_photo{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    /* position: absolute; */
+    /* left: -12%; */
+    z-index: 2;
+    box-shadow:0 0 32px #ca1515;
+    border-radius: 50%;
+}
+
+.hello_text>hr{
+    border: 2px solid #F80A39;
+}
+
+.info_text{
+    font-size: 19px;
+    text-align: justify;
+    font-family: Comic Neue;
+    letter-spacing: 2px;
+}
+
+.btn-group button {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #F80A39;
+    color: white;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left;
+}
+
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none;
+}
+
+.btn-group button:hover {
+    background-color: #212529;
+}
+
+
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row>.column {
+    padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 20%;
+}
+
+.content>h4 {
+    word-break: break-word;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: black;
+    padding: 10px;
+}
+
+.content>img{
+    border: 1px solid #F80A39;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    height: 167.25px;
+}
+
+.column_education {
+    float: left;
+    width: 50%;
+}
+
+.container_certificate {
+    position: relative;
+}
+
+.content_education {
+    background-color: #000;
+    padding: 10px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.caption-container {
+    background-color: #222;
+    padding: 2px 16px;
+    color: #212529;
+}
+
+/* Six columns side by side */
+.column_certificate {
+    /* float: left; */
+    width: 10%;
+    display: inline-block;
+    text-align: center !important;
+    
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: aliceblue;
+}
+
+.footer {
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 4rem;
+}
+
+.footer i {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 16px;
+}
+
+/* color bindings */
+/* hr{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+} */
+
+strong {
+    color: rgb(255, 255, 255);
+}
+
+.modal {
+    z-index: 9998;
+    overflow-y: auto;
+}
+
+.modal-dialog{
+    z-index: 9999;
+}
+
+.modal-body {
+    padding: 0rem;
+}
+.modal_contact{
+    outline: thick double #F80A39;
+    border-radius: 0px;
+    background-color: #000;
+    color: white;
+}
+
+.contact_modal_header{
+    padding: 13px;
+    border-bottom: 6px double #F80A39;
+}
+
+.close{
+    color: #FFF;
+    opacity: 1;
+}
+
+.contact_photo {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.vertical_line {
+    border-left: 6px double #f80a39;
+    height: 257px;
+}
+
+.contact_img_container{
+    display: inherit;
+}
+
+.contact_details_container{
+    font-family: Lobster;
+    letter-spacing: 3px;
+}
+
+.contact_details_container>hr {
+    border-bottom: 6px double #F80A39;
+}
+
+.modal_social_profile_details{
+    color: #fff;
+    letter-spacing: 1px;
+
+}
+
+.save_button{
+    color: #ffffff;
+    font-size: 17px;
+    margin-right: 4px;
+    font-weight: 100;
+    margin-left: 308px;
+    margin-top: 3px;
+}
+/* @-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+} */
+
+@keyframes fade_1 {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* @media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+} */
